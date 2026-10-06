@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Moderación — Sobremesa</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"></span>Sobremesa</a>
+    <button class="btn btn-ghost btn-small" id="logout" hidden>Cerrar sesión</button>
+  </div>
+</header>
+
+<main class="admin-main">
+  <div class="wrap">
+
+    <div class="notice" id="not-configured" hidden>
+      Falta completar <code>js/config.js</code> con los datos de Supabase (ver README).
+    </div>
+
+    <!-- Ingreso -->
+    <div class="card-shell admin-login" id="login-view" hidden>
+      <h3>Moderación</h3>
+      <p class="hint">Ingresá con la cuenta de administración.</p>
+      <form id="login-form">
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" class="text-input" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="login-pass">Contraseña</label>
+          <input type="password" id="login-pass" class="text-input" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <div class="status-note" id="login-status" role="status"></div>
+      </form>
+    </div>
+
+    <!-- Panel -->
+    <div id="admin-view" hidden>
+      <div class="admin-bar">
+        <h1 class="display">Moderación</h1>
+        <span class="poll-meta" id="admin-summary" style="margin:0;"></span>
+      </div>
+
+      <div class="participar-tabs" role="tablist" aria-label="Qué moderar">
+        <button class="tab-btn" role="tab" id="tab-comments" aria-controls="panel-comments" aria-selected="true">Comentarios<span class="count-pill" id="pending-comments" hidden></span></button>
+        <button class="tab-btn" role="tab" id="tab-notas" aria-controls="panel-notas" aria-selected="false" tabindex="-1">Notas<span class="count-pill" id="pending-notas" hidden></span></button>
+      </div>
+
+      <div class="admin-filters" id="status-filters" aria-label="Filtrar por estado">
+        <button class="chip" data-status="pending" aria-pressed="true">Pendientes</button>
+        <button class="chip" data-status="approved" aria-pressed="false">Publicados</button>
+        <button class="chip" data-status="rejected" aria-pressed="false">Rechazados</button>
+      </div>
+
+      <div id="panel-comments" role="tabpanel" aria-labelledby="tab-comments"></div>
+      <div id="panel-notas" role="tabpanel" aria-labelledby="tab-notas" hidden></div>
+      <div class="status-note" id="admin-status" role="status"></div>
+    </div>
+
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobremesa — un espacio de conversación ciudadana</title>
+<meta name="description" content="Un lugar para pensar en voz alta sobre educación, salud, ambiente y la sociedad que estamos construyendo. Votá, comentá y proponé tu nota.">
+
+<!-- EDITAR: reemplazar https://tudominio.org por la dirección real del sitio -->
+<link rel="canonical" href="https://tudominio.org/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Sobremesa">
+<meta property="og:title" content="Sobremesa — la sobremesa que no se levanta de la mesa">
+<meta property="og:description" content="Un espacio de conversación ciudadana sobre educación, salud, ambiente y el país que queremos. Sumate a la mesa.">
+<meta property="og:url" content="https://tudominio.org/">
+<meta property="og:image" content="https://tudominio.org/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F6ECDC">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      Sobremesa
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="visually-hidden">Abrir menú</span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Principal">
+      <a href="#temas">Temas</a>
+      <a href="#participar">Participar</a>
+      <a href="#notas">Notas</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="#nosotros">Quiénes somos</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ---------- HERO ---------- -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="fade-up">
+        <span class="eyebrow">Un espacio de conversación ciudadana</span>
+        <h1 class="display">La <em>sobremesa</em> que no se levanta de la mesa.</h1>
+        <p class="lede">Un lugar para pensar en voz alta sobre la educación, la salud, el ambiente y la sociedad que estamos construyendo. Sin apuro, como después de comer, cuando recién empieza la charla que importa.</p>
+        <div class="cta-row">
+          <a href="#participar" class="btn btn-primary">Sumate a la mesa</a>
+          <a href="#temas" class="btn btn-ghost">Ver los temas</a>
+        </div>
+      </div>
+
+      <div class="mesa-wrap">
+        <svg viewBox="0 0 420 420" width="360" height="360" role="img" aria-label="Mesa redonda con los cuatro temas del espacio">
+          <circle cx="210" cy="210" r="200" fill="none" stroke="var(--line)" stroke-width="1"/>
+          <circle cx="210" cy="210" r="150" fill="var(--card)" stroke="var(--ochre-deep)" stroke-width="1.5"/>
+          <circle cx="210" cy="210" r="150" fill="none" stroke="var(--teal)" stroke-width="1" stroke-dasharray="2 6" opacity="0.5"/>
+
+          <g class="mesa-orbit">
+            <g transform="translate(210,60)">
+              <circle r="34" fill="var(--ochre)"/>
+              <text x="0" y="5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#241C15">EDUC.</text>
+            </g>
+            <g transform="translate(360,210)">
+              <circle r="34" fill="var(--rust)"/>
+              <text x="0" y="5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#F6ECDC">SALUD</text>
+            </g>
+            <g transform="translate(210,360)">
+              <circle r="34" fill="var(--teal)"/>
+              <text x="0" y="5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8.4" fill="#F6ECDC">AMBIENTE</text>
+            </g>
+            <g transform="translate(60,210)">
+              <circle r="34" fill="var(--ink)"/>
+              <text x="0" y="5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#F6ECDC">FUTURO</text>
+            </g>
+          </g>
+
+          <circle cx="210" cy="210" r="6" fill="var(--ink)"/>
+        </svg>
+        <span class="mesa-caption">cuatro lugares, una misma mesa</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ---------- TEMAS ---------- -->
+  <section id="temas">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">De qué hablamos</span>
+        <h2 class="display">Cuatro lugares en la mesa</h2>
+      </div>
+      <div class="temas-grid">
+        <article class="tema-card">
+          <div class="tema-seat" style="background:var(--ochre); color:var(--ink)">01</div>
+          <h3>Educación</h3>
+          <p>¿Qué clase de escuela prepara a los chicos para un mundo que todavía no existe?</p>
+          <button class="tema-link" data-tema="educacion">Ver la conversación →</button>
+        </article>
+        <article class="tema-card">
+          <div class="tema-seat" style="background:var(--rust)">02</div>
+          <h3>Salud</h3>
+          <p>El derecho a cuidarse no debería depender del código postal ni del bolsillo.</p>
+          <button class="tema-link" data-tema="salud">Ver la conversación →</button>
+        </article>
+        <article class="tema-card">
+          <div class="tema-seat" style="background:var(--teal)">03</div>
+          <h3>Medio ambiente</h3>
+          <p>Lo que decidamos hoy con el agua, la tierra y el aire, alguien lo va a heredar.</p>
+          <button class="tema-link" data-tema="ambiente">Ver la conversación →</button>
+        </article>
+        <article class="tema-card">
+          <div class="tema-seat" style="background:var(--ink)">04</div>
+          <h3>Sociedad futura</h3>
+          <p>¿Qué país queremos dejar armado para dentro de veinte años?</p>
+          <button class="tema-link" data-tema="futuro">Ver la conversación →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- MANIFIESTO ---------- -->
+  <section>
+    <div class="wrap">
+      <div class="manifiesto">
+        <div class="manifiesto-inner">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Nadie cambia un país solo, pero una mesa donde varios se animan a decir lo que piensan ya es un principio de cambio.</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- PARTICIPAR ---------- -->
+  <section id="participar">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Cómo se suma tu voz</span>
+        <h2 class="display">Tres formas de estar en la mesa</h2>
+      </div>
+
+      <div class="notice" id="not-configured" hidden>
+        La participación todavía no está conectada. Falta completar <code>js/config.js</code> con los datos de Supabase (ver README).
+      </div>
+
+      <div class="participar-tabs" role="tablist" aria-label="Formas de participar">
+        <button class="tab-btn" role="tab" id="tab-encuesta" aria-controls="panel-encuesta" aria-selected="true">01 · Encuesta</button>
+        <button class="tab-btn" role="tab" id="tab-foro" aria-controls="panel-foro" aria-selected="false" tabindex="-1">02 · Foro</button>
+        <button class="tab-btn" role="tab" id="tab-nota" aria-controls="panel-nota" aria-selected="false" tabindex="-1">03 · Enviar tu nota</button>
+      </div>
+
+      <!-- Panel: Encuesta -->
+      <div class="panel" id="panel-encuesta" role="tabpanel" aria-labelledby="tab-encuesta">
+        <div class="card-shell">
+          <h3 id="poll-question">¿Qué tema te preocupa más hoy?</h3>
+          <p class="hint">Un voto por navegador. Los resultados se actualizan para toda la comunidad.</p>
+          <div id="poll-options" role="group" aria-labelledby="poll-question"></div>
+          <div class="poll-meta" id="poll-total" aria-live="polite">Cargando resultados…</div>
+        </div>
+      </div>
+
+      <!-- Panel: Foro -->
+      <div class="panel" id="panel-foro" role="tabpanel" aria-labelledby="tab-foro" hidden>
+        <div class="card-shell">
+          <h3>Dejá tu opinión</h3>
+          <p class="hint">Un espacio breve para debatir con respeto. Cada comentario pasa por el equipo antes de publicarse, para que la mesa siga siendo un lugar amable.</p>
+          <form id="comment-form" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="comment-name">Tu nombre (o un apodo)</label>
+                <input type="text" id="comment-name" class="text-input" maxlength="40" placeholder="Ej: Vecina de barrio" autocomplete="nickname">
+              </div>
+              <div class="field">
+                <label for="comment-tema">Tema</label>
+                <select id="comment-tema" class="text-input">
+                  <option value="">General</option>
+                  <option value="educacion">Educación</option>
+                  <option value="salud">Salud</option>
+                  <option value="ambiente">Medio ambiente</option>
+                  <option value="futuro">Sociedad futura</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="comment-text">Tu comentario</label>
+              <textarea id="comment-text" rows="3" maxlength="500" placeholder="¿Qué pensás sobre estos temas?" required></textarea>
+            </div>
+            <div class="hp-field" aria-hidden="true">
+              <label for="comment-website">No completar</label>
+              <input type="text" id="comment-website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar comentario</button>
+            <div class="status-note" id="comment-status" role="status"></div>
+          </form>
+
+          <hr class="divider" style="margin:26px 0;">
+
+          <div class="chip-row" id="comment-filters" aria-label="Filtrar por tema">
+            <button class="chip" data-tema="" aria-pressed="true">Todos</button>
+            <button class="chip" data-tema="educacion" aria-pressed="false">Educación</button>
+            <button class="chip" data-tema="salud" aria-pressed="false">Salud</button>
+            <button class="chip" data-tema="ambiente" aria-pressed="false">Medio ambiente</button>
+            <button class="chip" data-tema="futuro" aria-pressed="false">Sociedad futura</button>
+          </div>
+          <div id="comment-list" aria-live="polite"></div>
+          <div class="more-row"><button class="btn btn-ghost btn-small" id="comment-more" hidden>Ver más comentarios</button></div>
+        </div>
+      </div>
+
+      <!-- Panel: Nota -->
+      <div class="panel" id="panel-nota" role="tabpanel" aria-labelledby="tab-nota" hidden>
+        <div class="card-shell">
+          <h3>Proponé una nota o artículo</h3>
+          <p class="hint">Contanos tu idea. El equipo la revisa y, si encaja con el espacio, la publica en la sección de notas.</p>
+          <form id="nota-form" novalidate>
+            <div class="field">
+              <label for="nota-titulo">Título de tu propuesta</label>
+              <input type="text" id="nota-titulo" class="text-input" maxlength="90" placeholder="Ej: Lo que aprendí llevando a mis hijos a la escuela rural" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="nota-autor">Tu nombre</label>
+                <input type="text" id="nota-autor" class="text-input" maxlength="40" placeholder="Nombre y apellido, o apodo" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="nota-tema">Tema</label>
+                <select id="nota-tema" class="text-input">
+                  <option value="">Varios / otro</option>
+                  <option value="educacion">Educación</option>
+                  <option value="salud">Salud</option>
+                  <option value="ambiente">Medio ambiente</option>
+                  <option value="futuro">Sociedad futura</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="nota-contacto">Email o teléfono (opcional)</label>
+              <input type="text" id="nota-contacto" class="text-input" maxlength="120" placeholder="Para escribirte si tenemos preguntas" autocomplete="email">
+              <div class="field-help">No se publica. Solo lo ve el equipo.</div>
+            </div>
+            <div class="field">
+              <label for="nota-resumen">Resumen o borrador</label>
+              <textarea id="nota-resumen" rows="5" maxlength="800" placeholder="Contanos de qué se trata tu nota…" required></textarea>
+            </div>
+            <div class="hp-field" aria-hidden="true">
+              <label for="nota-website">No completar</label>
+              <input type="text" id="nota-website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar propuesta</button>
+            <div class="status-note" id="nota-status" role="status"></div>
+            <p class="form-foot">Al enviar aceptás que tu nombre y tu texto puedan publicarse en Sobremesa. <a href="privacidad.html">Cómo cuidamos tus datos</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- NOTAS PUBLICADAS ---------- -->
+  <section id="notas">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Lo que se escribió en la mesa</span>
+        <h2 class="display">Notas de la comunidad</h2>
+        <p>Textos propuestos por personas que se sentaron a la mesa, revisados y publicados por el equipo.</p>
+      </div>
+      <div class="chip-row" id="nota-filters" aria-label="Filtrar notas por tema" style="margin-bottom:24px;">
+        <button class="chip" data-tema="" aria-pressed="true">Todas</button>
+        <button class="chip" data-tema="educacion" aria-pressed="false">Educación</button>
+        <button class="chip" data-tema="salud" aria-pressed="false">Salud</button>
+        <button class="chip" data-tema="ambiente" aria-pressed="false">Medio ambiente</button>
+        <button class="chip" data-tema="futuro" aria-pressed="false">Sociedad futura</button>
+      </div>
+      <div class="notas-grid" id="notas-list"></div>
+      <div class="more-row"><button class="btn btn-ghost btn-small" id="notas-more" hidden>Ver más notas</button></div>
+    </div>
+  </section>
+
+  <!-- ---------- COMUNIDAD ---------- -->
+  <section id="comunidad">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Quiénes ya se sentaron</span>
+        <h2 class="display">La mesa va creciendo</h2>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-num" id="stat-votos">—</div>
+          <div class="stat-label">Votos en la encuesta</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" id="stat-comentarios">—</div>
+          <div class="stat-label">Comentarios publicados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" id="stat-notas">—</div>
+          <div class="stat-label">Notas propuestas</div>
+        </div>
+      </div>
+
+      <!-- Se completa solo con los últimos comentarios aprobados -->
+      <div class="voces-grid" id="voces" hidden></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ---------- QUIÉNES SOMOS ---------- -->
+  <!-- EDITAR: completar con la información real del equipo -->
+  <section id="nosotros">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:24px;">
+          <span class="eyebrow">Quiénes somos</span>
+          <h2 class="display">Quién pone la mesa</h2>
+        </div>
+        <p>Sobremesa es una iniciativa independiente de vecinas y vecinos que creemos que las grandes discusiones del país también se dan en la mesa de la cocina, en la sala de espera o en la puerta de la escuela.</p>
+        <p>No respondemos a ningún partido ni empresa. Nuestro trabajo es cuidar el espacio: moderar para que la charla sea respetuosa, acompañar a quienes quieren escribir y devolver a la comunidad lo que se dice en la mesa.</p>
+      </div>
+      <aside class="about-box">
+        <h3>Reglas de la mesa</h3>
+        <ul>
+          <li>Se discuten ideas, no personas.</li>
+          <li>Nada de insultos, discriminación ni datos personales de terceros.</li>
+          <li>Sin publicidad ni campañas partidarias.</li>
+          <li>El equipo puede no publicar lo que no respete estas reglas.</li>
+        </ul>
+        <h3 style="margin-top:22px;">Contacto</h3>
+        <!-- EDITAR: email real -->
+        <ul style="list-style:none; padding:0;">
+          <li><a href="mailto:contacto@tudominio.org">contacto@tudominio.org</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>
+      <div class="logo" style="font-size:1.05rem; margin-bottom:6px;"><span class="logo-mark small" aria-hidden="true"></span>Sobremesa</div>
+      <div class="footer-note">Hecho para pensar en comunidad.</div>
+    </div>
+    <nav class="footer-links" aria-label="Pie de página">
+      <a href="#temas">Temas</a>
+      <a href="#participar">Participar</a>
+      <a href="#notas">Notas</a>
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
